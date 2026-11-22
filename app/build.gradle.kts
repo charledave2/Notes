@@ -12,7 +12,7 @@ plugins {
     alias(libs.plugins.aboutLibraries)
 }
 
-val appName = "June"
+val appName = "Notes"
 val appId = "com.denser.june"
 val appNamespace = "com.denser.june"
 val apkNamePrefix = "june"

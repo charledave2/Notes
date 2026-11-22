@@ -2,7 +2,7 @@
     <!-- Google Drive & Play Sign-In -->
     <string name="connected">Connected</string>
     <string name="direct_connection">Direct Connection</string>
-    <string name="direct_connection_desc">June connects directly to Google Drive without passing through intermediary servers.</string>
+    <string name="direct_connection_desc">Notes connects directly to Google Drive without passing through intermediary servers.</string>
     <string name="google_account">Google Account</string>
     <string name="link_google_drive">Link Google Drive</string>
     <string name="link_google_drive_desc">Sync journals privately to a dedicated app folder on your Google Drive.</string>
@@ -11,8 +11,8 @@
     <string name="profile_and_email">Account Identity</string>
     <string name="profile_and_email_desc">Used only on-device to show your sign-in status. Never saved or shared.</string>
     <string name="sandboxed_storage">Sandboxed Access</string>
-    <string name="sandboxed_storage_desc">Restricted to June\'s app folder. The app cannot read or access other Drive files.</string>
+    <string name="sandboxed_storage_desc">Restricted to Notes\'s app folder. The app cannot read or access other Drive files.</string>
     <string name="sign_in_with_google">Sign In with Google</string>
     <string name="privacy_and_data_security">Privacy &amp; Data Security</string>
-    <string name="privacy_and_data_security_desc">How June protects your data when syncing with Google Drive:</string>
+    <string name="privacy_and_data_security_desc">How Notes protects your data when syncing with Google Drive:</string>
 </resources>
