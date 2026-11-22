@@ -1,23 +1,18 @@
-name: FOSS Release Build
+name: Notes Debug APK Build
 
 on:
-  push:
-    tags:
-      - 'v*'
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
-      id-token: write
-      attestations: write
+      contents: read
 
     steps:
     - uses: actions/checkout@v4
 
-    - name: set up JDK 17
+    - name: Set up JDK 17
       uses: actions/setup-java@v4
       with:
         java-version: '17'
@@ -27,57 +22,11 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
 
-    - name: Decode Keystore
-      env:
-        ENCODED_STRING: ${{ secrets.RELEASE_KEYSTORE }}
-      run: |
-        echo $ENCODED_STRING | base64 --decode > release.jks
+    - name: Build FOSS debug APK
+      run: ./gradlew :app:assembleFossDebug
 
-    - name: Build with Gradle
-      env:
-        RELEASE_STORE_FILE: ../release.jks
-        RELEASE_STORE_PASSWORD: ${{ secrets.RELEASE_STORE_PASSWORD }}
-        RELEASE_KEY_ALIAS: ${{ secrets.RELEASE_KEY_ALIAS }}
-        RELEASE_KEY_PASSWORD: ${{ secrets.RELEASE_KEY_PASSWORD }}
-      run: ./gradlew assembleFossRelease
-
-    - name: Upload APK
+    - name: Upload debug APK
       uses: actions/upload-artifact@v4
       with:
-        name: release-apk
-        path: app/build/outputs/apk/foss/release/*.apk
-
-    - name: Generate Artifact Attestation
-      uses: actions/attest-build-provenance@v1
-      with:
-        subject-path: 'app/build/outputs/apk/foss/release/*.apk'
-
-    - name: Extract Changelog Notes
-      run: |
-        python3 -c '
-        import json, os
-        tag = os.environ.get("GITHUB_REF_NAME", "")
-        data = json.load(open("app/src/main/assets/changelog.json", encoding="utf-8"))
-        entry = next((e for e in data if e.get("version") == tag), None)
-        notes = []
-        for c in (entry.get("changes", []) if entry else []):
-            if isinstance(c, str):
-                notes.append("- " + c)
-            elif not c.get("flavors") or "foss" in c["flavors"]:
-                notes.append("- " + c.get("text", ""))
-        open("release_notes.md", "w", encoding="utf-8").write("\n".join(notes) + "\n" if notes else "")
-        '
-
-        if [ ! -s release_notes.md ]; then
-          echo "::warning::Could not find changelog for ${{ github.ref_name }} in changelog.json"
-        fi
-
-    - name: Create Release
-      if: startsWith(github.ref, 'refs/tags/')
-      uses: softprops/action-gh-release@v2
-      with:
-        draft: false
-        make_latest: true
-        body_path: release_notes.md
-        generate_release_notes: true
-        files: app/build/outputs/apk/foss/release/app-foss-release.apk
+        name: notes-foss-debug-apk
+        path: app/build/outputs/apk/foss/debug/*.apk
