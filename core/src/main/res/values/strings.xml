@@ -1,6 +1,6 @@
 <resources>
     <!-- Non-Translatable -->
-    <string name="brand_app_name" translatable="false">June</string>
+    <string name="brand_app_name" translatable="false">Notes</string>
     <string name="brand_github" translatable="false">GitHub</string>
     <string name="brand_buy_me_a_coffee" translatable="false">Buy Me a Coffee</string>
     <string name="brand_email" translatable="false">Email</string>
@@ -72,7 +72,7 @@
     <string name="rename">Rename</string>
     <string name="restore_all">Restore All</string>
     <string name="save_and_enable_lock">Save &amp; Enable Lock</string>
-    <string name="unlock_june">Unlock June</string>
+    <string name="unlock_june">Unlock Notes</string>
     <string name="unlock_vault">Unlock Vault</string>
     <string name="skip_and_enable_lock">Skip &amp; Enable Lock</string>
     <string name="stop_sync">Stop Sync</string>
@@ -80,7 +80,7 @@
     <string name="take_photo">Take Photo</string>
 
     <!-- Status Labels -->
-    <string name="already_latest_version">You are already using the latest version of June.</string>
+    <string name="already_latest_version">You are already using the latest version of Notes.</string>
     <string name="api_key_invalid">Invalid API Key. Please verify.</string>
     <string name="api_key_valid">API Key is valid and verified!</string>
     <string name="camera_options_message">Would you like to take a photo or record a video?</string>
@@ -170,8 +170,8 @@
     <string name="switch_provider_desc">Switching your active cloud target to %1$s will re-check your local library against the new provider state.</string>
     <string name="switch_provider_title">Switch Provider?</string>
     <string name="update_available">Update Available</string>
-    <string name="update_available_foss">A new version of June is available. Here is what\'s new:</string>
-    <string name="update_available_play_store">A new version of June is available on the Google Play Store.</string>
+    <string name="update_available_foss">A new version of Notes is available. Here is what\'s new:</string>
+    <string name="update_available_play_store">A new version of Notes is available on the Google Play Store.</string>
     <string name="update_check_failed">Update Check Failed</string>
     <string name="up_to_date">Up to date</string>
 
@@ -261,8 +261,8 @@
     <string name="force_ltr_layout">Force LTR Interface</string>
     <string name="help_translate_desc">Contribute translations on Weblate</string>
     <string name="language">Language</string>
-    <string name="translate_app">Help translate June</string>
-    <string name="translate_dialog_desc">June\'s translations are crowd-sourced and hosted on Hosted Weblate, a web-based open-source translation platform.\n\nYou can easily add translations for your language or suggest improvements directly in your browser without any coding knowledge.</string>
+    <string name="translate_app">Help translate Notes</string>
+    <string name="translate_dialog_desc">Notes\' translations are crowd-sourced and hosted on Hosted Weblate, a web-based open-source translation platform.\n\nYou can easily add translations for your language or suggest improvements directly in your browser without any coding knowledge.</string>
 
     <!-- Settings - Privacy & Security -->
     <string name="app_lock">App Lock</string>
@@ -341,7 +341,7 @@
     <string name="notification">Notification</string>
     <string name="microphone">Microphone</string>
     <string name="permissions_info_title">Permissions &amp; Usage</string>
-    <string name="permissions_info_desc">Why June requests these permissions:</string>
+    <string name="permissions_info_desc">Why Notes requests these permissions:</string>
     <string name="location_permission_reason">Used to select and attach your current location to journal entries and maps.</string>
     <string name="notification_permission_reason">Used to deliver scheduled journaling reminders and notifications.</string>
     <string name="microphone_permission_reason">Used to record voice notes and audio memos directly in journal entries.</string>
@@ -376,7 +376,7 @@
     <string name="auto_backup_running">Backing up…</string>
     <string name="auto_backup_channel_desc">Notifications for scheduled auto backups</string>
     <string name="data_portability">Export &amp; Import</string>
-    <string name="create_backup_sheet_desc">Full app backup to restore anytime in June</string>
+    <string name="create_backup_sheet_desc">Full app backup to restore anytime in Notes</string>
     <string name="backup_format_too_old">Backup format is too old</string>
     <string name="backup_logging">Backup Logging</string>
     <string name="backup_saved_successfully">Backup saved successfully</string>
@@ -412,7 +412,7 @@
     <string name="import_markdown">Import Markdown</string>
     <string name="import_markdown_desc">Import .md files or zip</string>
     <string name="import_other_apps">Import from other apps</string>
-    <string name="app_import_sheet_desc">Select an export file to migrate into June</string>
+    <string name="app_import_sheet_desc">Select an export file to migrate into Notes</string>
     <string name="supported_apps">Supported apps</string>
     <string name="select_file">Select file</string>
     <string name="app_import_summary_success">%1$d imported, %2$d updated (%3$d photos, %4$d audios)</string>
@@ -505,7 +505,7 @@
     <string name="failed_to_load_map">Failed to load map</string>
     <string name="get_api_key_or_token">Get API key or access token</string>
     <string name="map" translatable="false">Map</string>
-    <string name="map_credits_body">June uses vector tiles and geocoding services from various open data and mapping providers.</string>
+    <string name="map_credits_body">Notes uses vector tiles and geocoding services from various open data and mapping providers.</string>
     <string name="openmap" translatable="false">OpenMap</string>
     <string name="openmap_auto_notice">OpenMap doesn\'t require an API key and is automatically configured.</string>
     <string name="maptiler" translatable="false">MapTiler</string>
@@ -531,7 +531,7 @@
     <string name="zoom_out">Zoom Out</string>
 
     <!-- About & Diagnostics -->
-    <string name="about_june">About June</string>
+    <string name="about_june">About Notes</string>
     <string name="about_june_desc">version and github link</string>
     <string name="about_libraries">About Libraries</string>
     <string name="about_libraries_desc">View licenses of third-party libraries</string>
@@ -612,12 +612,12 @@
     <string name="custom_theme">Custom Theme</string>
     <string name="font_credits">Font Credits</string>
     <string name="font_credits_desc">Credits and licenses for bundled typography</string>
-    <string name="font_credits_body">June bundles high-quality open-source variable fonts for an expressive journaling experience.</string>
-    <string name="unlock_june_plus">Unlock June Plus</string>
+    <string name="font_credits_body">Notes bundles high-quality open-source variable fonts for an expressive journaling experience.</string>
+    <string name="unlock_june_plus">Unlock Notes Plus</string>
     <string name="unlock_plus">Unlock Plus</string>
     <string name="save_with_default">Save with Default</string>
-    <string name="plus_styling_detected_title">June Plus Theme</string>
-    <string name="plus_styling_detected_desc">This entry uses custom fonts or colors from June Plus. Unlock Plus to save with your styling, or save with the default theme.</string>
+    <string name="plus_styling_detected_title">Notes Plus Theme</string>
+    <string name="plus_styling_detected_desc">This entry uses custom fonts or colors from Notes Plus. Unlock Plus to save with your styling, or save with the default theme.</string>
     <string name="entry_saved_default_theme">Entry saved with default theme</string>
     <string name="reset_plus_status">Reset Plus Status</string>
     <string name="plus_status_reset">Plus status has been reset</string>
