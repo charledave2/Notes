@@ -1,0 +1,5 @@
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/ic_notes_splash">
+    <target android:name="page" android:animation="@animator/notes_splash_page" />
+    <target android:name="writing" android:animation="@animator/notes_splash_writing" />
+</animated-vector>
